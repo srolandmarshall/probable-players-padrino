@@ -1,0 +1,13 @@
+.DS_Store
+log/**/*
+tmp/**/*
+vendor/gems/*
+!vendor/gems/cache/
+.sass-cache/*
+db/*.db
+.*.sw*
+
+.env
+yahoo_access_token.json
+
+data/*

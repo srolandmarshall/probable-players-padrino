@@ -1,0 +1,9 @@
+---
+:orm: activerecord
+:test: rspec
+:mock: none
+:script: none
+:renderer: haml
+:stylesheet: none
+:namespace: YahooFantasy
+:migration_format: number

@@ -1,0 +1,19 @@
+- count = @players.length
+
+%h1 Players (Count: #{count})
+
+- if count > 0
+  %table
+    %thead
+      %tr
+        %th Name
+        %th Positions
+        %th Team
+        %th Owner
+    %tbody
+      - @players.each do |player|
+        %tr
+          %td= player.full_name
+          %td= player.positions.join(', ')
+          %td= player.team
+          %td= player.fantasy_team ? player.fantasy_team&.team_name : "Free Agent"
